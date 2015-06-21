@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <center>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0">
+               <children>
+                  <Label alignment="CENTER" layoutY="14.0" prefHeight="30.0" prefWidth="400.0" text="Text Viewer">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="fileContentsTextArea" layoutX="18.0" layoutY="205.0" prefHeight="176.0" prefWidth="363.0" wrapText="true">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </TextArea>
+                  <Label layoutX="18.0" layoutY="64.0" text="Select text file">
+                     <font>
+                        <Font name="Arial" size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="filePathTextBox" layoutX="18.0" layoutY="88.0" prefHeight="31.0" prefWidth="280.0">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </TextField>
+                  <Label layoutX="18.0" layoutY="180.0" text="Output">
+                     <font>
+                        <Font name="Arial" size="15.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="loadButton" alignment="CENTER" layoutX="164.0" layoutY="141.0" mnemonicParsing="false" onAction="#onLoadButtonClicked" prefHeight="27.0" prefWidth="74.0" text="Load">
+                     <font>
+                        <Font name="Arial" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="dialogButton" layoutX="312.0" layoutY="90.0" mnemonicParsing="false" onAction="#onDialogButtonClicked" prefHeight="27.0" prefWidth="69.0" text="Dialog">
+                     <font>
+                        <Font name="Arial" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+   </center>
+</BorderPane>
